@@ -1,10 +1,9 @@
 <?php
-
 namespace pidan\helper;
 
 use ArrayAccess;
 use InvalidArgumentException;
-//use pidan\Collection;
+use pidan\Collection;
 
 class Arr
 {

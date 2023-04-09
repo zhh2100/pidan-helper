@@ -1,23 +1,36 @@
 {
     "name": "zhh2100/pidan-helper",
-    "description": "皮蛋框架辅助",
+    "description": "皮蛋框架辅助  同步到3.1.6之后  优化IDE支持 committed on Feb 24, 2022 ",
     "license": "Apache-2.0",
     "authors": [
         {
-            "name": "zhh2100",
-            "email": "zhh2100@qq.com"
+            "name": "jetee",
+            "email": "112738102@qq.com"
         }
     ],
     "require": {
         "php": ">=7.1.0"
     },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
     "autoload": {
-        "files": [
-            "src/helper.php"
-        ],
         "psr-4": {
             "pidan\\": "src"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
         }
     },
-    "minimum-stability": "dev"
+    "scripts": {
+        "test": "./vendor/bin/phpunit --colors"
+    },
+    "scripts-descriptions": {
+        "test": "Run all tests."
+    }
 }
